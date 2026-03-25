@@ -353,7 +353,7 @@ let currentFontSize = parseInt(localStorage.getItem("fontSize")) || 18;
     
     async function loadLanguage(lang){
     
-    const response = await fetch(`http://127.0.0.1:8000/sections/full/${sectionId}?language_code=${lang}`);
+    const response = await fetch(`https://vedpathi.onrender.com/sections/full/${sectionId}?language_code=${lang}`);
     const data = await response.json();
     
     document.getElementById("book_title").innerText = data.book_title;

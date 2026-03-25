@@ -169,7 +169,7 @@ const bookId = getQueryParam("book_id");
 
 async function loadChapters(){
 
-const response = await fetch(`http://127.0.0.1:8000/sections/by-book/${bookId}`);
+const response = await fetch(`https://vedpathi.onrender.com/sections/by-book/${bookId}`);
 const chapters = await response.json();
 
 const container = document.getElementById("chapters");

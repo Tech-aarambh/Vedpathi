@@ -136,7 +136,7 @@ body.dark .book:hover {
 // Logic remains identical to your original code
 async function loadBooks(){
 
-const response = await fetch("http://127.0.0.1:8000/books/");
+const response = await fetch("https://vedpathi.onrender.com/books/");
 const books = await response.json();
 
 const container = document.getElementById("books");
